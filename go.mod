@@ -1,4 +1,4 @@
-module github.com/eclipse-keyple/keyple-website
+module keyple-support-calypsonet-website
 
 go 1.15
 

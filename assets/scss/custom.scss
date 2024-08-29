@@ -1,11 +1,24 @@
+.hero-title, .hero-lead {
+  color: white;
+}
+
+.hero-lead a {
+  color: white;
+}
+
+.hero-lead a:hover {
+  color: white;
+}
+
 footer {
-  background-color: #1D87BB;
+  background-color: #039efd;
+  color: #FFF;
   margin: 0;
   padding: 2rem 0 1rem 0;
 }
 
 footer a {
-  color: #FFF;
+  color: #FFF !important;
 }
 
 footer a:hover {
@@ -82,24 +95,6 @@ footer li {
   background-color: lavender !important;
 }
 
-.keyple-adopters > li {
-  display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
-  vertical-align: middle;
-}
-
-.keyple-adopters > li img {
-  max-height: 95px;
-  padding: 10px;
-  min-width: 170px;
-  max-width: 170px;
-}
-
-div.eclipsefdn-adopters {
-  background-color: white;
-}
-
 a, h3.article-title a:hover {
   transition-property: none !important;
 }
@@ -129,7 +124,7 @@ a, h3.article-title a:hover {
 
 // color of left and right TOCs links
 .docs-sidebar .nav > li > a:hover, a.docs-toc-link:hover {
-  color:#1D87BB;
+  color:#039efd;
 }
 
 // all links
@@ -209,44 +204,12 @@ table code {
   width: 4rem;
 }
 
-// Dependency check tool
-.bg-yellow {
-  background: #FEFECE;
-}
-.bg-red {
-  background: #FDEDEC;
-}
-.bg-purple {
-  background: #F4ECF7;
-}
-.bg-blue {
-  background: #EBF5FB;
-}
-.bg-green {
-  background: #E9F7EF;
-}
-.bg-orange {
-  background: #FDF2E9;
-}
-.c-grey {
-  color: grey;
-}
-
-// Logos style on footer section
-.site-footer #logo-eclipse-foundation {
-  height: 7rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-.site-footer #logo-eclipse-iot {
-  height: 6rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 // Powered by on footer section
 .copyright-license-text {
   font-weight: bold;
+}
+.site-footer {
+  color: #FFF;
 }
 .site-footer #template-info {
   font-size: 0.5rem;
@@ -270,56 +233,10 @@ table code {
   margin-right: auto;
 }
 
-// Fix color of news in homepage
-.btn-links a:hover {
-  color: white;
-}
-
 // Fix horizontal scroll on tables when useless
 table {
   display: table;
   overflow-x: auto;
-}
-
-// Changelog table
-#changelog-table th {
-  font-size: 1rem;
-}
-#changelog-table th:nth-child(1),
-#changelog-table td:nth-child(1) {
-  text-align: center;
-  font-size: 1rem;
-  width: 7.5rem;
-}
-#changelog-table span.component {
-  font-size: 1rem;
-  font-weight: bold;
-}
-#changelog-table span.version {
-  font-weight: bold;
-  padding-left: 1rem;
-}
-#changelog-table span.version code {
-  font-size: 1rem !important;
-}
-#changelog-table code {
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: .8rem !important;
-}
-#changelog-table h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: .8rem;
-}
-#changelog-table ul {
-  margin-bottom: 0;
-}
-#changelog-table hr {
-  visibility: hidden;
-  margin-top: .75rem;
-  margin-bottom: 0;
-  background: #ddd;
 }
 
 // Button alignment on navbar
@@ -332,7 +249,7 @@ table>tbody>tr:nth-child(odd)>td, table>tbody>tr:nth-child(odd)>th {
   background-color: #f9f9f9;
 }
 
-// Fix copy button visibility and size
+// Fix copy button visibility
 .btn-copy-code {
   display: block;
   line-height: .5;
@@ -345,25 +262,4 @@ table>tbody>tr:nth-child(odd)>td, table>tbody>tr:nth-child(odd)>th {
 .docs-links {
   //max-height: calc(100vh - 5rem - 70px);
   max-height: calc(100vh - 4rem);
-}
-
-// Add horizontal/vertical separator to all button groups
-.btn-group .btn {
-  margin-top: 1px !important;
-  margin-left: 1px !important;
-}
-
-// Add an external link icon to all portfolio card-text
-.card-text a::after {
-  content: "\f08e"; // Code Unicode of external link icon
-  font-family: "Font Awesome 5 Free", sans-serif;
-  margin-left: 10px;
-}
-
-// Tooltip statistics
-.tooltip-statistics {
-  font-size: .7rem;
-  position: absolute;
-  display: none;
-  z-index: 9999;
 }
