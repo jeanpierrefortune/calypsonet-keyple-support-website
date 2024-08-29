@@ -1,0 +1,156 @@
+# SITE SETUP
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+# Appearance
+
+appearance:
+  theme_day: keyple-theme
+  theme_night:
+  font: 'keyple-font'
+  font_size: M
+
+# SEO
+
+marketing:
+  seo:
+site_type: Project
+local_business_type: ''
+org_name: 'Eclipse'
+description: 'Eclipse Keyple® accelerates the development through a universal, open and modular platform that provides high-level APIs and ensures application reliability and compliance.'
+twitter: ''
+analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+    google_tag_manager: 'GTM-5WLCZXC'
+    microsoft_clarity: ''
+verification:
+    google: ''
+    baidu: ''
+
+# Site header
+
+header:
+  navbar:
+    enable: true
+    align: c
+    show_logo: true
+    show_language: false
+    show_day_night: true
+    show_search: true
+    highlight_active_link: true
+
+# Site footer
+
+footer:
+  copyright:
+    notice: '&copy; 2019-{year} The Eclipse Keyple® project. All Rights Reserved.'
+    license:
+      enable: false
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
+
+# Localization
+
+locale:
+  date_format: '2006-01-02'
+  time_format: '15:04'
+  address_format: en-us
+
+# Site features
+features:
+  syntax_highlighter:
+    enable: true
+    theme_light: github-dark
+    theme_dark: github-dark
+    extra_languages:
+      - java
+      - groovy
+      - xml
+      - kotlin
+      - cpp
+      - gradle
+      - ini
+      - make
+  math:
+    enable: false
+  privacy_pack:
+    enable: false
+  repository:
+    url: 'https://github.com/eclipse-keypop/keypop-website'
+    content_dir: content
+    branch: main
+  avatar:
+    gravatar: false
+    shape: circle
+  comment:
+    provider: ''
+    disqus:
+      shortname: ''
+      show_count: true
+    commento:
+      url: ''
+    giscus:
+      repo: ''
+      repo_id: ''
+      category: ''
+      category_id: ''
+  search:
+    provider: wowchemy
+    algolia:
+      app_id: ''
+      api_key: ''
+      index_name: ''
+      show_logo: false
+  map:
+    provider: 'mapnik'
+    api_key: ''
+    zoom: 15
+
+# Extensions
+
+extensions:
+  decap_cms:
+    branch: main
+    local_backend: false
+  academicons:
+    enable: true
+
+# Custom JS extension
+plugins_js: ['custom']
+
+# Custom variables
+keyple_version:
+  keypop_reader_java_api: '2.0.1'
+  keypop_card_java_api: '2.0.1'
+  keypop_calypso_card_java_api: '2.1.0'
+  keypop_calypso_crypto_legacysam_java_api: '0.6.0'
+
+  keyple_common_java_api: '2.0.1'
+  keyple_util_java_lib: '2.4.0'
+
+  keyple_service_java_lib: '3.2.3'
+  keyple_service_resource_java_lib: '3.0.2'
+
+  keyple_card_calypso_java_lib: '3.1.2'
+  keyple_card_calypso_crypto_legacysam_java_lib: '0.7.1'
+  keyple_card_calypso_crypto_pki_java_lib: '0.2.0'
+  keyple_card_generic_java_lib: '3.0.1'
+
+  keyple_plugin_java_api: '2.3.1'
+  keyple_plugin_android_nfc_java_lib: '2.2.0'
+  keyple_plugin_android_omapi_java_lib: '2.1.0'
+  keyple_plugin_cardresource_java_lib: '2.0.1'
+  keyple_plugin_pcsc_java_lib: '2.2.1'
+  keyple_plugin_stub_java_lib: '2.2.1'
+
+  keyple_distributed_local_java_api: '2.1.1'
+  keyple_distributed_local_java_lib: '2.3.1'
+  keyple_distributed_network_java_lib: '2.4.0'
+  keyple_distributed_remote_java_api: '3.0.1'
+  keyple_distributed_remote_java_lib: '2.4.0'
+
+  keyple_java: '1.0.0'
+  keyple_cpp: '0.9.0'

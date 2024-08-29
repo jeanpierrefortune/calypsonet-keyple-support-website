@@ -1,0 +1,99 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: What is Eclipse Keyple®
+    url: '/what-is-keyple/'
+    weight: 10
+  - name: Overview
+    parent: What is Eclipse Keyple®
+    url: '/what-is-keyple/overview/'
+    weight: 10
+  - name: Why trust Eclipse Keyple®?
+    parent: What is Eclipse Keyple®
+    url: '/what-is-keyple/why-trust/'
+    weight: 20
+  - name: Who is it for?
+    parent: What is Eclipse Keyple®
+    url: '/what-is-keyple/who-is-it-for/'
+    weight: 30
+  - name: Who is using Eclipse Keyple®?
+    parent: What is Eclipse Keyple®
+    url: '#adopters'
+    weight: 40
+  - name: What is Calypso®?
+    parent: What is Eclipse Keyple®
+    url: '/what-is-keyple/what-is-calypso/'
+    weight: 50
+  - name: Keyple's main features
+    parent: What is Eclipse Keyple®
+    url: '/what-is-keyple/main-features/'
+    weight: 60
+  - name: News
+    parent: What is Eclipse Keyple®
+    url: '#news'
+    weight: 70
+
+  - name: Learn
+    url: '/learn/overview'
+    weight: 20
+
+  - name: Components
+    url: '/components/overview'
+    weight: 30
+
+  - name: Community
+    url: '/community/'
+    weight: 40
+  - name: Adopters & Testimonials
+    parent: Community
+    url: '/adopters-and-testimonials/'
+    weight: 5
+  - name: Contributing
+    parent: Community
+    url: '/community/contributing/'
+    weight: 10
+  - name: Roadmap
+    parent: Community
+    url: '/community/roadmap/'
+    weight: 20
+  - name: Changelog
+    parent: Community
+    url: '/community/changelog/'
+    weight: 25
+  - name: Project dashboard
+    parent: Community
+    url: '/project-dashboard/'
+    weight: 30
+  - name: Statistics
+    parent: Community
+    url: '/statistics/'
+    weight: 35
+  - name: Code quality dashboard
+    parent: Community
+    url: 'https://sonarcloud.io/organizations/eclipse/projects?search=keyple&sort=-analysis_date'
+    weight: 40
+  - name: Eclipse Foundation Keyple page
+    parent: Community
+    url: 'https://projects.eclipse.org/projects/iot.keyple/'
+    weight: 50
+  - name: Mailing list
+    parent: Community
+    url: 'https://accounts.eclipse.org/mailing-list/keyple-dev/'
+    weight: 60
+  - name: GitHub home repository
+    parent: Community
+    url: 'https://github.com/eclipse-keyple/keyple/'
+    weight: 70
+
+  - name: External resources
+    url: '/external-resources/'
+    weight: 50
+
+  - name: START CODING
+    url: '/learn/build-your-first-app/'
+    weight: 60
+    pre: "<button class='btn btn-info'><i class='fas fa-rocket pr-1' aria-hidden='true'></i> "
+    post: "</button>"

@@ -1,0 +1,176 @@
+@startuml
+
+' == THEME ==
+
+'Couleurs issues de : https://htmlcolorcodes.com/fr/tableau-de-couleur/tableau-de-couleur-design-plat/
+!define C_GREY1 F8F9F9
+!define C_GREY2 F2F3F4
+!define C_GREY3 E5E7E9
+!define C_GREY4 D7DBDD
+!define C_GREY5 CACFD2
+!define C_GREY6 BDC3C7
+!define C_LINK 3498DB
+!define C_USE 27AE60
+!define C_YELLOW FEFECE
+
+' -- Styles that don't work with new version of plantuml --
+skinparam stereotypeABorderColor #A9DCDF
+skinparam stereotypeIBorderColor #B4A7E5
+skinparam stereotypeCBorderColor #ADD1B2
+skinparam stereotypeEBorderColor #EB93DF
+' -- END --
+
+skinparam ClassBorderThickness 2
+skinparam ArrowThickness 2
+
+' Yellow
+skinparam ClassBackgroundColor #FEFECE
+skinparam ClassBorderColor #D4AC0D
+' Red
+skinparam ClassBackgroundColor<<red>> #FDEDEC
+skinparam ClassBorderColor<<red>> #E74C3C
+hide <<red>> stereotype
+' Purple
+skinparam ClassBackgroundColor<<purple>> #F4ECF7
+skinparam ClassBorderColor<<purple>> #8E44AD
+hide <<purple>> stereotype
+' blue
+skinparam ClassBackgroundColor<<blue>> #EBF5FB
+skinparam ClassBorderColor<<blue>> #3498DB
+hide <<blue>> stereotype
+' Green
+skinparam ClassBackgroundColor<<green>> #E9F7EF
+skinparam ClassBorderColor<<green>> #27AE60
+hide <<green>> stereotype
+' Grey
+skinparam ClassBackgroundColor<<grey>> #EAECEE
+skinparam ClassBorderColor<<grey>> #2C3E50
+hide <<grey>> stereotype
+
+' == CONTENT ==
+
+legend top
+    __Colors legend__ :
+    * <back:C_YELLOW>Public API (for application)</back>
+    * <back:lightBlue>Private adapters</back>
+    * <back:plum>Keypop internal API</back>
+end legend
+
+package "Common API\norg.eclipse.keyple.core.common" as commonApi {
+    +interface KeypleCardExtension {
+        --
+        ...
+    }
+}
+package "Keypop Reader API\norg.eclipse.keypop.reader.selection.spi" as readerSelectionSpi {
+    +interface CardSelectionExtension {
+    }
+    +interface SmartCard {
+        --
+        ...
+    }
+}
+package "Keypop Card API\norg.eclipse.keypop.card.spi" as cardSpi {
+    +interface CardSelectionExtensionSpi {
+        --
+        ...
+    }
+    +interface SmartCardSpi {
+    }
+    +interface CardSelectionRequestSpi {
+        --
+        ...
+    }
+    +interface CardRequestSpi {
+        --
+        ...
+    }
+    +interface ApduRequestSpi {
+        --
+        ...
+    }
+}
+
+package "Card extension Xxx\norg.eclipse.keyple.card.xxx" as specificExtension {
+    +class "**final** XxxCardExtensionService" as XxxCardExtensionService implements commonApi.KeypleCardExtension {
+        --
+        +{static} XxxCardExtensionService getInstance ()
+        ..
+        +XxxCardSelectionExtension createXxxCardSelectionExtension ()
+        ...
+    }
+    ' Adapters
+    together {
+        +interface XxxCardSelectionExtension extends readerSelectionSpi.CardSelectionExtension {
+            --
+            custom settings... (optional)
+        }
+        +interface XxxSmartCard extends readerSelectionSpi.SmartCard {
+            --
+            custom settings... (optional)
+        }
+        ~class "**final** XxxCardSelectionExtensionAdapter" as CardSelectionAdapter implements XxxCardSelectionExtension, cardSpi.CardSelectionExtensionSpi {
+            --
+            ...
+        }
+        ~class "**final** XxxSmartCardAdapter" as SmartCardAdapter implements XxxSmartCard, cardSpi.SmartCardSpi {
+            --
+            ...
+        }
+    }
+    together {
+        ~class "**final** CardSelectionRequestAdapter" as CardSelectionRequestAdapter implements cardSpi.CardSelectionRequestSpi {
+            --
+            ...
+        }
+        ~class "**final** CardRequestAdapter" as CardRequestAdapter implements cardSpi.CardRequestSpi {
+            --
+            ...
+        }
+        ~class "**final** ApduRequestAdapter" as ApduRequestAdapter implements cardSpi.ApduRequestSpi {
+            --
+            ...
+        }
+    }
+}
+
+' Associations
+
+XxxCardExtensionService ..> CardSelectionAdapter #C_LINK : provide >
+
+CardSelectionAdapter .> SmartCardAdapter #C_LINK : provide >
+CardSelectionAdapter .> CardSelectionRequestAdapter #C_LINK : provide >
+
+CardSelectionRequestAdapter .> CardRequestAdapter #C_LINK : provide >
+
+CardRequestAdapter .> ApduRequestAdapter #C_LINK : provide >
+
+' == LAYOUT ==
+
+CardSelectionAdapter -[hidden]- CardSelectionExtensionSpi
+SmartCardAdapter -[hidden]- SmartCardSpi
+CardSelectionRequestAdapter -[hidden]- CardSelectionRequestSpi
+CardRequestAdapter -[hidden]- CardRequestSpi
+ApduRequestAdapter -[hidden]- ApduRequestSpi
+
+XxxCardSelectionExtension -[hidden]- CardSelectionAdapter
+
+' == STYLE ==
+
+package commonApi #C_GREY1 {}
+package specificExtension #C_GREY1 {}
+package cardSpi #C_GREY1 {}
+package readerSelectionSpi #C_GREY1 {}
+
+class specificExtension.CardSelectionAdapter <<blue>>
+class specificExtension.SmartCardAdapter <<blue>>
+class specificExtension.CardSelectionRequestAdapter <<blue>>
+class specificExtension.CardRequestAdapter <<blue>>
+class specificExtension.ApduRequestAdapter <<blue>>
+interface cardSpi.CardSelectionExtensionSpi <<purple>>
+interface cardSpi.SmartCardSpi <<purple>>
+interface cardSpi.CardSelectionRequestSpi <<purple>>
+interface cardSpi.CardRequestSpi <<purple>>
+interface cardSpi.ApduRequestSpi <<purple>>
+
+@enduml
