@@ -233,6 +233,18 @@ Java-based ticketing terminals, to help check the configuration and file structu
 {{% /modal %}}
         </td>
     </tr>
+    <tr>
+        <td class="text-center"><a href='{{< relref path="calypso_basic_legacy_sam_personalization_tool.md" >}}'>Calypso Basic Legacy SAM Personalization Tool</a></td>
+        <td class="text-center">Windows, Linux, macOS</td>
+        <td class="text-center">Java/Kotlin</td>
+        <td class="text-center">CNA</td>
+        <td class="text-center">Reserved</td>
+        <td class="text-center">
+{{% modal title="Calypso Basic Legacy SAM Personalization Tool" %}}
+The Calypso Basic Legacy SAM Personalization Tool is dedicated to personalization of the Legacy SAM in the objective of Calypso Basic card key injection.
+{{% /modal %}}
+        </td>
+    </tr>
     </tbody>
 </table>
 

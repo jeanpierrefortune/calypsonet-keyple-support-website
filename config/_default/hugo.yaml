@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Calypso Networks Association Keyple Support # Website name
-baseurl: 'https://keyple-support.calypsonet.org/' # Website URL
+baseurl: 'https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/' # Website URL
 relativeURLs: true
 canonifyURLs: true
 
