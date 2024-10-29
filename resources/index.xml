@@ -100,7 +100,7 @@ SAM Dump, SAM Personalization, Application Info) for the application to recogniz
 &lt;h3 id="disclaimer">Disclaimer&lt;/h3>
 &lt;p>This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
 authorized to distribute this tool to other parties.&lt;/p>
-&lt;h2 id="user-expectations">User Expectations&lt;/h2>
+&lt;h2 id="user-requirements-and-responsibilities">User Requirements and Responsibilities&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Target Audience:&lt;/strong> Users familiar with SAM personalization and the Calypso system.&lt;/li>
 &lt;li>&lt;strong>Prerequisites:&lt;/strong> Necessary hardware (SAM readers) and software (drivers) installed and configured correctly.&lt;/li>
@@ -204,7 +204,7 @@ Personalization, Application Info) to make the application recognize the changes
 &lt;h3 id="disclaimer">Disclaimer&lt;/h3>
 &lt;p>This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
 authorized to distribute this tool to other parties.&lt;/p>
-&lt;h2 id="user-expectations">User Expectations&lt;/h2>
+&lt;h2 id="user-requirements-and-responsibilities">User Requirements and Responsibilities&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>Target Audience:&lt;/strong> Users familiar with Calypso Basic card personalization. Basic knowledge of smart card technology
 and security concepts is assumed.&lt;/li>
