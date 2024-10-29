@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/sitemap.xml
