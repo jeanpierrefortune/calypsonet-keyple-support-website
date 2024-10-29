@@ -1,0 +1,101 @@
+---
+title: Calypso Basic Card Personalization Tool Tutorial
+type: book
+toc: true
+weight: 2
+---
+
+This tutorial will guide you through the process of personalizing a Calypso Basic card.
+
+### Hardware Requirements
+
+This tool requires two PC/SC readers:
+
+* **Target Card Reader:** This contactless reader holds the **blank card** you want to personalize.
+* **SAM Reader:** This contact reader contains the **SAM CPP** used for keys injection.
+
+### Installation
+
+1. Download the appropriate installation package for your operating system from
+   the [download page](https://keyple-support.calypsonet.org/tools/download/):
+    * **Windows:** `.msi` package
+    * **macOS:** `.dmg` package
+    * **Linux:** `.deb` package
+2. **Windows:** Double-click the `.msi` package to start the installation process.
+3. **macOS:** Open the `.dmg` file and drag the application to the Applications folder.
+4. **Linux:** Use your distribution's package manager to install the `.deb` package.
+5. **Important note:** Currently, the installer does not automatically create a shortcut in the Start Menu (Windows) or
+   Applications menu (macOS). If you want quick access, you will need to create a shortcut manually.
+
+### Launching the Tool
+
+1. Once the installation is complete, you can find the executable in the installation directory. The default location
+   varies depending on your operating system:
+    * **Windows:** `C:\\Program Files\\cna-tool-basic-card-perso-app\\`
+    * **macOS:** `/Applications/cna-tool-basic-card-perso-app/`
+    * **Linux:** `/opt/cna-tool-basic-card-perso-app/` (or in your user's home directory if you installed it
+      locally)
+2. Double-click the executable to launch the **Calypso Basic Card Personalization Tool**.
+
+### Application Interface
+
+The application window has a top menu and two tabs:
+
+#### Settings Menu
+
+1. Click the **Settings** menu.
+2. Select the **Target Card Reader** name. This is where you will present your blank Calypso Basic card.
+3. Select the **SAM Reader** name.
+4. Enter the **SAM Unlock Value** if required.
+5. Select the directory for the log file.
+
+#### Tabs
+
+* **Basic Card Personalization:** Configure and personalize the card. Set parameters like AID, KVC, and KIFs, and
+  start/stop the personalization process.
+* **Application Info:** View logs and events related to the application and card reader. Useful for troubleshooting.
+
+### Personalizing a Card
+
+1. Select the **Basic Card Personalization** tab.
+2. Insert the **SAM CPP** into the SAM reader.
+3. Enter the personalization parameters:
+    * **AID**
+    * **System keys KVC**
+    * **Work keys KIF and KVC**
+4. Click **Start** to begin scanning for the card.
+5. Present a blank card to the card reader's antenna.
+
+### Refreshing Reader Detection
+
+If you connect or disconnect card readers while the application is running, switch between the tabs (Basic Card
+Personalization, Application Info) to make the application recognize the changes.
+
+### Screenshots
+
+Installation
+![Installation](/media/cna-tool-basic-card-perso-app/install-dialog.png)
+
+Settings
+![Settings](/media/cna-tool-basic-card-perso-app/settings-dialog.png)
+
+Card personalization
+![Card personalization](/media/cna-tool-basic-card-perso-app/personalization-tab.png)
+
+Application info
+![Application info](/media/cna-tool-basic-card-perso-app/info-and-logs-tab.png)
+
+### Disclaimer
+
+This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
+authorized to distribute this tool to other parties.
+
+## User Expectations
+
+* **Target Audience:** Users familiar with Calypso Basic card personalization. Basic knowledge of smart card technology
+  and security concepts is assumed.
+* **Prerequisites:** Necessary hardware (card reader, SAM reader) and software (drivers) installed and configured
+  correctly.
+* **Responsibilities:** Ensure correct selection of the target card and SAM, proper handling of unlock values and
+  sensitive information, and entering the correct personalization parameters (AID, KVC, KIFs).
+* **Usage:** Authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.
