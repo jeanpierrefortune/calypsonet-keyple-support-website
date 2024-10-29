@@ -1,11 +1,118 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calypso Networks Association Keyple Support</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/</link><atom:link href="https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/index.xml" rel="self" type="application/rss+xml"/><description>Calypso Networks Association Keyple Support</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/media/logo.svg</url><title>Calypso Networks Association Keyple Support</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/</link></image><item><title>Calypso Basic Legacy SAM Personalization Tool Tutorial</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/calypso_basic_legacy_sam_personalization_tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/calypso_basic_legacy_sam_personalization_tool/</guid><description>&lt;p>This tutorial will guide you through the process of personalizing a &lt;strong>SAM CPP&lt;/strong> needed for &lt;strong>Calypso Basic&lt;/strong> card keys injection.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calypso Networks Association Keyple Support</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/</link><atom:link href="https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/index.xml" rel="self" type="application/rss+xml"/><description>Calypso Networks Association Keyple Support</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/media/logo.svg</url><title>Calypso Networks Association Keyple Support</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/</link></image><item><title>Calypso Basic Legacy SAM Personalization Tool Tutorial</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-basic-legacysam-perso-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-basic-legacysam-perso-app/</guid><description>&lt;p>This tutorial will guide you through the process of personalizing a &lt;strong>SAM CPP&lt;/strong> needed for Calypso Basic card key
+injection.&lt;/p>
 &lt;h3 id="hardware-requirements">Hardware Requirements&lt;/h3>
 &lt;p>This tool requires two PC/SC contact readers:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Target SAM Reader:&lt;/strong> This reader holds the virgin &lt;strong>SAM CPP&lt;/strong> you want to personalize. The tool reads its data to display its
-current state and then writes the new configuration during personalization.&lt;/li>
-&lt;li>&lt;strong>Origin SAM Reader:&lt;/strong> This reader contains the &lt;strong>SAM SP&lt;/strong> with the desired keys and settings that you want to inject into
-the target &lt;strong>SAM CPP&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Target SAM Reader:&lt;/strong> This reader holds the virgin &lt;strong>SAM CPP&lt;/strong> you want to personalize.&lt;/li>
+&lt;li>&lt;strong>Origin SAM Reader:&lt;/strong> This reader contains the &lt;strong>SAM SP&lt;/strong> with the desired keys and settings.&lt;/li>
+&lt;/ul>
+&lt;h3 id="installation">Installation&lt;/h3>
+&lt;ol>
+&lt;li>Download the appropriate installation package for your operating system from
+the &lt;a href="https://keyple-support.calypsonet.org/tools/download/" target="_blank" rel="noopener">download page&lt;/a>:
+&lt;ul>
+&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>.msi&lt;/code> package&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>.dmg&lt;/code> package&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>.deb&lt;/code> package&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Windows:&lt;/strong> Double-click the &lt;code>.msi&lt;/code> package to start the installation.&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> Open the &lt;code>.dmg&lt;/code> file and drag the application to the Applications folder.&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> Use your distribution&amp;rsquo;s package manager to install the &lt;code>.deb&lt;/code> package.&lt;/li>
+&lt;li>&lt;strong>Important note:&lt;/strong> The installer does not automatically create a shortcut in the Start Menu (Windows) or
+Applications menu (macOS). You need to create one manually.&lt;/li>
+&lt;/ol>
+&lt;h3 id="launching-the-tool">Launching the Tool&lt;/h3>
+&lt;ol>
+&lt;li>After installation, find the executable in the installation directory:
+&lt;ul>
+&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>C:\\Program Files\\cna-tool-basic-legacysam-perso-app\\&lt;/code>&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>/Applications/cna-tool-basic-legacysam-perso-app/&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>/opt/cna-tool-basic-legacysam-perso-app/&lt;/code> (or your user&amp;rsquo;s home directory)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Double-click the executable to launch the Calypso Basic Legacy SAM Personalization Tool.&lt;/li>
+&lt;/ol>
+&lt;h3 id="application-interface">Application Interface&lt;/h3>
+&lt;p>The application window has a top menu and three tabs:&lt;/p>
+&lt;h4 id="settings-menu">Settings Menu&lt;/h4>
+&lt;ol>
+&lt;li>Click the &lt;strong>Settings&lt;/strong> menu.&lt;/li>
+&lt;li>Select the &lt;strong>Target SAM Reader&lt;/strong> name. This is where you will insert your blank SAM.&lt;/li>
+&lt;li>Select the &lt;strong>Origin SAM Reader&lt;/strong> name. This SAM contains the data you want to transfer to the target SAM.&lt;/li>
+&lt;li>Enter the &lt;strong>Origin SAM Unlock Value&lt;/strong> if required.&lt;/li>
+&lt;/ol>
+&lt;h4 id="tabs">Tabs&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>SAM Dump:&lt;/strong> Shows the detailed information and parameters of the SAM inserted in the target SAM reader.&lt;/li>
+&lt;li>&lt;strong>SAM Personalization:&lt;/strong> Configure and execute the personalization process.&lt;/li>
+&lt;li>&lt;strong>Application Info:&lt;/strong> View logs and events related to the application and SAM readers. Useful for troubleshooting.&lt;/li>
+&lt;/ul>
+&lt;h3 id="personalizing-a-sam-cpp">Personalizing a SAM CPP&lt;/h3>
+&lt;ol>
+&lt;li>Select the &lt;strong>SAM Personalization&lt;/strong> tab.&lt;/li>
+&lt;li>Insert a virgin SAM in the target SAM reader.&lt;/li>
+&lt;li>Insert the SAM SP in the origin SAM reader.&lt;/li>
+&lt;li>Set the parameters:
+&lt;ul>
+&lt;li>Parameter version and owner data (informative)&lt;/li>
+&lt;li>System keys KVC&lt;/li>
+&lt;li>Work keys KIF and KVC&lt;/li>
+&lt;li>Lock parameters&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Click &lt;strong>Execute&lt;/strong> to personalize your SAM.&lt;/li>
+&lt;/ol>
+&lt;h3 id="refreshing-reader-detection">Refreshing Reader Detection&lt;/h3>
+&lt;p>If you connect or disconnect SAM readers while the application is running, you might need to switch between the tabs (
+SAM Dump, SAM Personalization, Application Info) for the application to recognize the changes.&lt;/p>
+&lt;h3 id="screenshots">Screenshots&lt;/h3>
+&lt;p>Installation
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-legacysam-perso-app/install-dialog.png" alt="Installation" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Settings
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-legacysam-perso-app/settings-dialog.png" alt="Settings" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>SAM dump
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-legacysam-perso-app/dump-tab.png" alt="SAM dump" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>SAM personalization
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-legacysam-perso-app/personalization-tab.png" alt="SAM personalization" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Application info
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-legacysam-perso-app/info-and-logs-tab.png" alt="Application info" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h3 id="disclaimer">Disclaimer&lt;/h3>
+&lt;p>This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
+authorized to distribute this tool to other parties.&lt;/p>
+&lt;h2 id="user-expectations">User Expectations&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Target Audience:&lt;/strong> Users familiar with SAM personalization and the Calypso system.&lt;/li>
+&lt;li>&lt;strong>Prerequisites:&lt;/strong> Necessary hardware (SAM readers) and software (drivers) installed and configured correctly.&lt;/li>
+&lt;li>&lt;strong>Responsibilities:&lt;/strong> Ensure the correct selection of target and origin SAMs, and the proper handling of unlock values
+and other sensitive information.&lt;/li>
+&lt;li>&lt;strong>Usage:&lt;/strong> Authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
+&lt;/ul></description></item><item><title>Calypso Basic Card Personalization Tool Tutorial</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-basic-card-perso-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-basic-card-perso-app/</guid><description>&lt;p>This tutorial will guide you through the process of personalizing a Calypso Basic card.&lt;/p>
+&lt;h3 id="hardware-requirements">Hardware Requirements&lt;/h3>
+&lt;p>This tool requires two PC/SC readers:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Target Card Reader:&lt;/strong> This contactless reader holds the &lt;strong>blank card&lt;/strong> you want to personalize.&lt;/li>
+&lt;li>&lt;strong>SAM Reader:&lt;/strong> This contact reader contains the &lt;strong>SAM CPP&lt;/strong> used for keys injection.&lt;/li>
 &lt;/ul>
 &lt;h3 id="installation">Installation&lt;/h3>
 &lt;ol>
@@ -28,79 +135,70 @@ Applications menu (macOS). If you want quick access, you will need to create a s
 &lt;li>Once the installation is complete, you can find the executable in the installation directory. The default location
 varies depending on your operating system:
 &lt;ul>
-&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>C:\\Program Files\\cna-tool-basic-legacysam-perso-app\\&lt;/code>&lt;/li>
-&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>/Applications/cna-tool-basic-legacysam-perso-app/&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>/opt/cna-tool-basic-legacysam-perso-app/&lt;/code> (or in your user&amp;rsquo;s home directory if you installed it
+&lt;li>&lt;strong>Windows:&lt;/strong> &lt;code>C:\\Program Files\\cna-tool-basic-card-perso-app\\&lt;/code>&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> &lt;code>/Applications/cna-tool-basic-card-perso-app/&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>/opt/cna-tool-basic-card-perso-app/&lt;/code> (or in your user&amp;rsquo;s home directory if you installed it
 locally)&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Double-click the executable to launch the &lt;strong>Calypso Basic Legacy SAM Personalization Tool&lt;/strong>.&lt;/li>
-&lt;li>The tool will open with the SAM Dump tab selected.&lt;/li>
+&lt;li>Double-click the executable to launch the &lt;strong>Calypso Basic Card Personalization Tool&lt;/strong>.&lt;/li>
 &lt;/ol>
-&lt;h3 id="application-interface">Application interface&lt;/h3>
-&lt;p>The application window has a top menu and three tabs:&lt;/p>
-&lt;h4 id="settings-menu-entry">Settings menu entry&lt;/h4>
+&lt;h3 id="application-interface">Application Interface&lt;/h3>
+&lt;p>The application window has a top menu and two tabs:&lt;/p>
+&lt;h4 id="settings-menu">Settings Menu&lt;/h4>
 &lt;ol>
-&lt;li>Select the Settings menu.&lt;/li>
-&lt;li>Select the Target SAM Reader name from the drop-down list. This is where your blank SAM should be inserted.&lt;/li>
-&lt;li>Select the Origin SAM Reader name from the drop-down list. This SAM contains the data you want to transfer to the target SAM.&lt;/li>
-&lt;li>Enter the Origin SAM Unlock Value in the text field, if required.&lt;/li>
+&lt;li>Click the &lt;strong>Settings&lt;/strong> menu.&lt;/li>
+&lt;li>Select the &lt;strong>Target Card Reader&lt;/strong> name. This is where you will present your blank Calypso Basic card.&lt;/li>
+&lt;li>Select the &lt;strong>SAM Reader&lt;/strong> name.&lt;/li>
+&lt;li>Enter the &lt;strong>SAM Unlock Value&lt;/strong> if required.&lt;/li>
+&lt;li>Select the directory for the log file.&lt;/li>
 &lt;/ol>
 &lt;h4 id="tabs">Tabs&lt;/h4>
 &lt;ul>
-&lt;li>&lt;strong>SAM Dump:&lt;/strong> Shows the detailed information and parameters of the SAM inserted in the target SAM reader. This allows you to view the SAM&amp;rsquo;s current state before and after personalization.&lt;/li>
-&lt;li>&lt;strong>SAM Personalization:&lt;/strong> Allows you to configure and execute the personalization process. You can choose which parameters to transfer, and inject them into a blank target SAM. You can also export/import the personalization settings.&lt;/li>
-&lt;li>&lt;strong>Application Info:&lt;/strong> Displays logs and events related to the application and SAM readers, which can be useful for
-troubleshooting.&lt;/li>
+&lt;li>&lt;strong>Basic Card Personalization:&lt;/strong> Configure and personalize the card. Set parameters like AID, KVC, and KIFs, and
+start/stop the personalization process.&lt;/li>
+&lt;li>&lt;strong>Application Info:&lt;/strong> View logs and events related to the application and card reader. Useful for troubleshooting.&lt;/li>
 &lt;/ul>
-&lt;h3 id="creating-a-sam-cpp">Creating a SAM CPP&lt;/h3>
+&lt;h3 id="personalizing-a-card">Personalizing a Card&lt;/h3>
 &lt;ol>
-&lt;li>Select the SAM Personalization tab.&lt;/li>
-&lt;li>Insert a virgin SAM in the target SAM reader.&lt;/li>
-&lt;li>Insert the SAM SP in the origin SAM reader.&lt;/li>
-&lt;li>Set the parameters such as
+&lt;li>Select the &lt;strong>Basic Card Personalization&lt;/strong> tab.&lt;/li>
+&lt;li>Insert the &lt;strong>SAM CPP&lt;/strong> into the SAM reader.&lt;/li>
+&lt;li>Enter the personalization parameters:
 &lt;ul>
-&lt;li>parameter version and owner data (informative)&lt;/li>
-&lt;li>system keys KVC&lt;/li>
-&lt;li>work keys KIF and KVC&lt;/li>
-&lt;li>Lock parameters&lt;/li>
+&lt;li>&lt;strong>AID&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>System keys KVC&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Work keys KIF and KVC&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Click the &amp;ldquo;Execute&amp;rdquo; button to inject the parameters and keys into the blank SAM. The tool will personalize your SAM
-by writing the parameters and transferring the keys from the origin SAM to the target SAM.&lt;/li>
+&lt;li>Click &lt;strong>Start&lt;/strong> to begin scanning for the card.&lt;/li>
+&lt;li>Present a blank card to the card reader&amp;rsquo;s antenna.&lt;/li>
 &lt;/ol>
 &lt;h3 id="refreshing-reader-detection">Refreshing Reader Detection&lt;/h3>
-&lt;p>If you connect or disconnect SAM readers while the application is running, you might need to switch between the tabs (
-SAM Dump, SAM Personalization, Application Info) for the application to recognize the changes.&lt;/p>
+&lt;p>If you connect or disconnect card readers while the application is running, switch between the tabs (Basic Card
+Personalization, Application Info) to make the application recognize the changes.&lt;/p>
 &lt;h3 id="screenshots">Screenshots&lt;/h3>
 &lt;p>Installation
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./media/calypso_basic_legacy_sam_personalization_tool/install-dialog.png" alt="Installation" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/install-dialog.png" alt="Installation" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>Settings
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./media/calypso_basic_legacy_sam_personalization_tool/settings-dialog.png" alt="Settings" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/settings-dialog.png" alt="Settings" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
-&lt;p>SAM dump
+&lt;p>Card personalization
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./media/calypso_basic_legacy_sam_personalization_tool/dump-tab.png" alt="SAM dump" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p>
-&lt;p>SAM personalization
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./media/calypso_basic_legacy_sam_personalization_tool/personalization-tab.png" alt="SAM personalization" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/personalization-tab.png" alt="Card personalization" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>Application info
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./media/calypso_basic_legacy_sam_personalization_tool/info-and-logs-tab.png" alt="Application info" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="./media/cna-tool-basic-card-perso-app/info-and-logs-tab.png" alt="Application info" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h3 id="disclaimer">Disclaimer&lt;/h3>
@@ -108,12 +206,11 @@ SAM Dump, SAM Personalization, Application Info) for the application to recogniz
 authorized to distribute this tool to other parties.&lt;/p>
 &lt;h2 id="user-expectations">User Expectations&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Target Audience:&lt;/strong> This tool is designed for users familiar with SAM personalization and the Calypso system. Basic
-knowledge of smart card technology and security concepts is assumed.&lt;/li>
-&lt;li>&lt;strong>Prerequisites:&lt;/strong> Users should have the necessary hardware (SAM readers) and software (drivers) installed and
-configured correctly.&lt;/li>
-&lt;li>&lt;strong>Responsibilities:&lt;/strong> Users are responsible for ensuring the correct selection of target and origin SAMs, as well as
-the proper handling of unlock values and other sensitive information.&lt;/li>
-&lt;li>&lt;strong>Usage:&lt;/strong> The tool is intended for authorized personnel only. Any misuse or unauthorized distribution is strictly
-prohibited.&lt;/li>
+&lt;li>&lt;strong>Target Audience:&lt;/strong> Users familiar with Calypso Basic card personalization. Basic knowledge of smart card technology
+and security concepts is assumed.&lt;/li>
+&lt;li>&lt;strong>Prerequisites:&lt;/strong> Necessary hardware (card reader, SAM reader) and software (drivers) installed and configured
+correctly.&lt;/li>
+&lt;li>&lt;strong>Responsibilities:&lt;/strong> Ensure correct selection of the target card and SAM, proper handling of unlock values and
+sensitive information, and entering the correct personalization parameters (AID, KVC, KIFs).&lt;/li>
+&lt;li>&lt;strong>Usage:&lt;/strong> Authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
 &lt;/ul></description></item></channel></rss>
