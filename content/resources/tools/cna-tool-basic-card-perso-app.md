@@ -90,7 +90,7 @@ Application info
 This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
 authorized to distribute this tool to other parties.
 
-## User Expectations
+## User Requirements and Responsibilities
 
 * **Target Audience:** Users familiar with Calypso Basic card personalization. Basic knowledge of smart card technology
   and security concepts is assumed.

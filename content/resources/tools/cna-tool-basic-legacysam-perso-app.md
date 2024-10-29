@@ -92,7 +92,7 @@ Application info
 This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
 authorized to distribute this tool to other parties.
 
-## User Expectations
+## User Requirements and Responsibilities
 
 * **Target Audience:** Users familiar with SAM personalization and the Calypso system.
 * **Prerequisites:** Necessary hardware (SAM readers) and software (drivers) installed and configured correctly.
