@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calypso Networks Association | Calypso Networks Association Keyple Support</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/</link><atom:link href="https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/index.xml" rel="self" type="application/rss+xml"/><description>Calypso Networks Association</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/media/logo.svg</url><title>Calypso Networks Association</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/</link></image><item><title>Calypso Analyzer Tool Tutorial</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-card-analyzer-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-card-analyzer-app/</guid><description>&lt;p>This tutorial guides you through using the CNA Tool Card Analyzer App Suite, a set of command-line tools for analyzing
-and verifying Calypso-compliant smart cards.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calypso Networks Association | Calypso Networks Association Keyple Support</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/</link><atom:link href="https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/index.xml" rel="self" type="application/rss+xml"/><description>Calypso Networks Association</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/media/logo.svg</url><title>Calypso Networks Association</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/</link></image><item><title>Calypso Analyzer Tool Tutorial</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-card-analyzer-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-card-analyzer-app/</guid><description>&lt;p>This tutorial guides you through the use of the CNA Tool Card Analyzer App Suite, a set of two command-line tools for
+analyzing and verifying Calypso-compliant smart cards.&lt;/p>
 &lt;p>&lt;strong>What is the CNA Tool Card Analyzer App Suite?&lt;/strong>&lt;/p>
 &lt;p>The CNA Tool Card Analyzer App Suite consists of two command-line tools:&lt;/p>
 &lt;ul>
@@ -18,11 +18,11 @@ expected file structure.&lt;/li>
 &lt;/ul>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Java:&lt;/strong> Ensure you have Java Runtime Environment (JRE) installed on your system. You can download it
+&lt;li>&lt;strong>Java:&lt;/strong> Ensure you have a Java Runtime Environment (JRE) installed on your system. You can download it
 from &lt;a href="www.java.com">www.java.com&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>PC/SC card reader:&lt;/strong> A contactless PC/SC compliant card reader is required to interact with the Calypso card.&lt;/li>
 &lt;/ul>
-&lt;h2 id="downloading-the-apps">Downloading the Apps&lt;/h2>
+&lt;h2 id="download-the-apps">Download the Apps&lt;/h2>
 &lt;ol>
 &lt;li>Go to the &lt;a href="https://github.com/calypsonet/calypso-card-analyzer/releases" target="_blank" rel="noopener">releases page&lt;/a> to download the latest
 version of the application suite.&lt;/li>
@@ -33,42 +33,49 @@ version of the application suite.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="running-the-apps">Running the Apps&lt;/h2>
-&lt;h3 id="analyzing-a-card-tool_analyzecardfilestructure">Analyzing a Card (Tool_AnalyzeCardFileStructure)&lt;/h3>
+&lt;h2 id="run-the-apps">Run the Apps&lt;/h2>
+&lt;h3 id="analyze-a-card-tool_analyzecardfilestructure">Analyze a Card (Tool_AnalyzeCardFileStructure)&lt;/h3>
 &lt;ol>
 &lt;li>Open a terminal or command prompt.&lt;/li>
 &lt;li>Navigate to the directory containing &lt;code>Tool_AnalyzeCardFileStructure-x.y.z.jar&lt;/code>.&lt;/li>
+&lt;li>Place your Calypso card on the reader.&lt;/li>
 &lt;li>Execute the following command:&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="4">
-&lt;li>Present your Calypso card to the reader when prompted.&lt;/li>
-&lt;li>The analysis results will be displayed in JSON format in the terminal.&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar &lt;span class="o">[&lt;/span>readerNameRegex&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>readerNameRegex&lt;/code> (optional): A regular expression to filter the card readers. If not provided, a default regex (
+&lt;code>.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*&lt;/code>) is used.&lt;/li>
+&lt;/ul>
+&lt;ol start="5">
+&lt;li>The analysis results will be displayed in the terminal and JSON file containing the card structure will be saved.&lt;/li>
 &lt;/ol>
-&lt;p>&lt;strong>Saving the results:&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar &amp;gt; analysis_results.json
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="checking-card-structure-tool_checkcardfilestructure">Checking Card Structure (Tool_CheckCardFileStructure)&lt;/h3>
+&lt;h3 id="check-a-card-structure-tool_checkcardfilestructure">Check a card structure (Tool_CheckCardFileStructure)&lt;/h3>
 &lt;ol>
 &lt;li>Open a terminal or command prompt.&lt;/li>
 &lt;li>Navigate to the directory containing &lt;code>Tool_CheckCardFileStructure-x.y.z.jar&lt;/code>.&lt;/li>
-&lt;li>Prepare a JSON file (&lt;code>expected_structure.json&lt;/code>) defining the expected card structure.&lt;/li>
+&lt;li>&lt;strong>Obtain a JSON file defining the expected card structure:&lt;/strong>
+&lt;ul>
+&lt;li>You can use a pre-defined JSON file from the &lt;code>card_profiles&lt;/code> directory in the GitHub repository. The file names
+indicate the type of product they correspond to.&lt;/li>
+&lt;li>Alternatively, you can create your own JSON file defining the expected structure.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Place your Calypso card on the reader and keep it still.&lt;/li>
 &lt;li>Execute the following command:&lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_CheckCardFileStructure-x.y.z.jar expected_structure.json
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="5">
-&lt;li>Present your Calypso card to the reader when prompted.&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_CheckCardFileStructure-x.y.z.jar &amp;lt;path-to-json-file&amp;gt; &lt;span class="o">[&lt;/span>readerNameRegex&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>&amp;lt;path-to-json-file&amp;gt;&lt;/code>: &lt;strong>(Required)&lt;/strong> The path to the JSON file containing the expected card structure. This argument should be replaced with the actual path to your JSON file (e.g., &lt;code>card_profiles/my_card_profile.json&lt;/code>).&lt;/li>
+&lt;li>&lt;code>readerNameRegex&lt;/code> (optional): A regular expression to filter the card readers. If not provided, a default regex (&lt;code>.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*&lt;/code>) is used.&lt;/li>
+&lt;/ul>
+&lt;ol start="6">
 &lt;li>The tool will compare the card&amp;rsquo;s structure with the provided JSON file and display any differences.&lt;/li>
 &lt;/ol>
-&lt;h2 id="command-line-options">Command-line Options&lt;/h2>
-&lt;p>Each tool may support additional command-line options. Use the &lt;code>-h&lt;/code> or &lt;code>--help&lt;/code> flag to display the available options
-for each tool:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar -h
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">java -jar Tool_CheckCardFileStructure-x.y.z.jar -h
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="troubleshooting">Troubleshooting&lt;/h2>
+&lt;h2 id="troubleshooting">Troubleshooting&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Card not detected:&lt;/strong> Ensure your card reader is correctly connected and installed, and that the card is presented
+&lt;li>&lt;strong>Card not found:&lt;/strong> Ensure your card reader is correctly connected and installed, and that the card is presented
 correctly.&lt;/li>
-&lt;li>&lt;strong>Java not found:&lt;/strong> Make sure Java is installed and added to your system&amp;rsquo;s PATH environment variable.&lt;/li>
+&lt;li>&lt;strong>Java not found:&lt;/strong> Ensure Java is installed and that its directory is added to your system&amp;rsquo;s PATH environment variable.&lt;/li>
 &lt;li>&lt;strong>Error messages:&lt;/strong> Carefully read any error messages displayed in the terminal for clues on how to resolve the issue.&lt;/li>
 &lt;/ul>
 &lt;h2 id="disclaimer">Disclaimer&lt;/h2>
