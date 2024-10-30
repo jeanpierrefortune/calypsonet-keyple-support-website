@@ -1,4 +1,96 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calypso Networks Association Keyple Support</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/</link><atom:link href="https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/index.xml" rel="self" type="application/rss+xml"/><description>Calypso Networks Association Keyple Support</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/media/logo.svg</url><title>Calypso Networks Association Keyple Support</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/</link></image><item><title>Calypso Basic Legacy SAM Personalization Tool Tutorial</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-basic-legacysam-perso-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-basic-legacysam-perso-app/</guid><description>&lt;p>This tutorial will guide you through the process of personalizing a &lt;strong>SAM CPP&lt;/strong> needed for Calypso Basic card key
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Calypso Networks Association Keyple Support</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/</link><atom:link href="https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/index.xml" rel="self" type="application/rss+xml"/><description>Calypso Networks Association Keyple Support</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><image><url>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/media/logo.svg</url><title>Calypso Networks Association Keyple Support</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/</link></image><item><title>Calypso Analyzer Tool Tutorial</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-card-analyzer-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-card-analyzer-app/</guid><description>&lt;p>This tutorial guides you through using the CNA Tool Card Analyzer App Suite, a set of command-line tools for analyzing
+and verifying Calypso-compliant smart cards.&lt;/p>
+&lt;p>&lt;strong>What is the CNA Tool Card Analyzer App Suite?&lt;/strong>&lt;/p>
+&lt;p>The CNA Tool Card Analyzer App Suite consists of two command-line tools:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Tool_AnalyzeCardFileStructure:&lt;/strong> Analyzes the file structure of a Calypso smart card and generates a JSON report
+containing the card&amp;rsquo;s structure and application data.&lt;/li>
+&lt;li>&lt;strong>Tool_CheckCardFileStructure:&lt;/strong> Checks the file structure of a Calypso card against a given JSON file containing the
+expected file structure.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Why use the CNA Tool Card Analyzer App Suite?&lt;/strong>&lt;/p>
+&lt;p>This suite helps developers and testers:&lt;/p>
+&lt;ul>
+&lt;li>Understand the data stored on a Calypso card.&lt;/li>
+&lt;li>Verify compliance with Calypso specifications.&lt;/li>
+&lt;li>Troubleshoot potential issues.&lt;/li>
+&lt;li>Compare card structure against a predefined template.&lt;/li>
+&lt;/ul>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Java:&lt;/strong> Ensure you have Java Runtime Environment (JRE) installed on your system. You can download it
+from &lt;a href="www.java.com">www.java.com&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>PC/SC card reader:&lt;/strong> A contactless PC/SC compliant card reader is required to interact with the Calypso card.&lt;/li>
+&lt;/ul>
+&lt;h2 id="downloading-the-apps">Downloading the Apps&lt;/h2>
+&lt;ol>
+&lt;li>Go to the &lt;a href="https://github.com/calypsonet/calypso-card-analyzer/releases" target="_blank" rel="noopener">releases page&lt;/a> to download the latest
+version of the application suite.&lt;/li>
+&lt;li>Download the executable JAR files:
+&lt;ul>
+&lt;li>&lt;code>Tool_AnalyzeCardFileStructure-x.y.z.jar&lt;/code>&lt;/li>
+&lt;li>&lt;code>Tool_CheckCardFileStructure-x.y.z.jar&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="running-the-apps">Running the Apps&lt;/h2>
+&lt;h3 id="analyzing-a-card-tool_analyzecardfilestructure">Analyzing a Card (Tool_AnalyzeCardFileStructure)&lt;/h3>
+&lt;ol>
+&lt;li>Open a terminal or command prompt.&lt;/li>
+&lt;li>Navigate to the directory containing &lt;code>Tool_AnalyzeCardFileStructure-x.y.z.jar&lt;/code>.&lt;/li>
+&lt;li>Execute the following command:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="4">
+&lt;li>Present your Calypso card to the reader when prompted.&lt;/li>
+&lt;li>The analysis results will be displayed in JSON format in the terminal.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Saving the results:&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar &amp;gt; analysis_results.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="checking-card-structure-tool_checkcardfilestructure">Checking Card Structure (Tool_CheckCardFileStructure)&lt;/h3>
+&lt;ol>
+&lt;li>Open a terminal or command prompt.&lt;/li>
+&lt;li>Navigate to the directory containing &lt;code>Tool_CheckCardFileStructure-x.y.z.jar&lt;/code>.&lt;/li>
+&lt;li>Prepare a JSON file (&lt;code>expected_structure.json&lt;/code>) defining the expected card structure.&lt;/li>
+&lt;li>Execute the following command:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_CheckCardFileStructure-x.y.z.jar expected_structure.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="5">
+&lt;li>Present your Calypso card to the reader when prompted.&lt;/li>
+&lt;li>The tool will compare the card&amp;rsquo;s structure with the provided JSON file and display any differences.&lt;/li>
+&lt;/ol>
+&lt;h2 id="command-line-options">Command-line Options&lt;/h2>
+&lt;p>Each tool may support additional command-line options. Use the &lt;code>-h&lt;/code> or &lt;code>--help&lt;/code> flag to display the available options
+for each tool:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar -h
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">java -jar Tool_CheckCardFileStructure-x.y.z.jar -h
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="troubleshooting">Troubleshooting&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Card not detected:&lt;/strong> Ensure your card reader is correctly connected and installed, and that the card is presented
+correctly.&lt;/li>
+&lt;li>&lt;strong>Java not found:&lt;/strong> Make sure Java is installed and added to your system&amp;rsquo;s PATH environment variable.&lt;/li>
+&lt;li>&lt;strong>Error messages:&lt;/strong> Carefully read any error messages displayed in the terminal for clues on how to resolve the issue.&lt;/li>
+&lt;/ul>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>This software is provided under the terms of the Eclipse Public License 2.0. See the LICENSE file for more information.&lt;/p>
+&lt;h2 id="user-requirements-and-responsibilities">User Requirements and Responsibilities&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Target Audience:&lt;/strong> Developers, testers, and anyone interested in analyzing or verifying Calypso card data. Basic
+knowledge of smart card technology and command-line interfaces is recommended.&lt;/li>
+&lt;li>&lt;strong>Prerequisites:&lt;/strong> Java Runtime Environment, a PC/SC compliant contactless card reader, and necessary drivers.&lt;/li>
+&lt;li>&lt;strong>Responsibilities:&lt;/strong>
+&lt;ul>
+&lt;li>Ensure proper handling of the card and responsible use of the analysis data.&lt;/li>
+&lt;li>If you modify the software and distribute it, you must make your source code modifications available under the EPL
+2.0.&lt;/li>
+&lt;li>You must include the original copyright notices and the full text of the EPL 2.0 license with any distribution.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Usage:&lt;/strong> The software is available to everyone under the terms of the EPL 2.0. You are free to use, modify, and
+distribute it, even in commercial settings, as long as you comply with the license terms.&lt;/li>
+&lt;/ul>
+&lt;p>This tutorial provides a basic guide for using the CNA Tool Card Analyzer App Suite. For more advanced usage and
+detailed information, please refer to the application documentation and the Calypso specifications.&lt;/p></description></item><item><title>Calypso Basic Legacy SAM Personalization Tool Tutorial</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-basic-legacysam-perso-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-basic-legacysam-perso-app/</guid><description>&lt;p>This tutorial will guide you through the process of personalizing a &lt;strong>SAM CPP&lt;/strong> needed for Calypso Basic card key
 injection.&lt;/p>
 &lt;h2 id="hardware-requirements">Hardware Requirements&lt;/h2>
 &lt;p>This tool requires two PC/SC contact readers:&lt;/p>
