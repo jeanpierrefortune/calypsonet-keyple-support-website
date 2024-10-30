@@ -3,9 +3,9 @@ analyzing and verifying Calypso-compliant smart cards.&lt;/p>
 &lt;p>&lt;strong>What is the CNA Tool Card Analyzer App Suite?&lt;/strong>&lt;/p>
 &lt;p>The CNA Tool Card Analyzer App Suite consists of two command-line tools:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Tool_AnalyzeCardFileStructure:&lt;/strong> Analyzes the file structure of a Calypso smart card and generates a JSON report
+&lt;li>&lt;strong>Tool_AnalyzeCardFileStructure:&lt;/strong> analyzes the file structure of a Calypso smart card and generates a JSON report
 containing the card&amp;rsquo;s structure and application data.&lt;/li>
-&lt;li>&lt;strong>Tool_CheckCardFileStructure:&lt;/strong> Checks the file structure of a Calypso card against a given JSON file containing the
+&lt;li>&lt;strong>Tool_CheckCardFileStructure:&lt;/strong> checks the file structure of a Calypso card against a given JSON file containing the
 expected file structure.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Why use the CNA Tool Card Analyzer App Suite?&lt;/strong>&lt;/p>
@@ -18,9 +18,9 @@ expected file structure.&lt;/li>
 &lt;/ul>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Java:&lt;/strong> Ensure you have a Java Runtime Environment (JRE) installed on your system. You can download it
+&lt;li>&lt;strong>Java:&lt;/strong> ensure you have a Java Runtime Environment (JRE) installed on your system. You can download it
 from &lt;a href="www.java.com">www.java.com&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>PC/SC card reader:&lt;/strong> A contactless PC/SC compliant card reader is required to interact with the Calypso card.&lt;/li>
+&lt;li>&lt;strong>PC/SC card reader:&lt;/strong> a contactless PC/SC compliant card reader is required to interact with the Calypso card.&lt;/li>
 &lt;/ul>
 &lt;h2 id="download-the-apps">Download the Apps&lt;/h2>
 &lt;ol>
@@ -43,7 +43,7 @@ version of the application suite.&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar &lt;span class="o">[&lt;/span>readerNameRegex&lt;span class="o">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>readerNameRegex&lt;/code> (optional): A regular expression to filter the card readers. If not provided, a default regex (
+&lt;li>&lt;code>readerNameRegex&lt;/code> (optional): a regular expression to filter the card readers. If not provided, a default regex (
 &lt;code>.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*&lt;/code>) is used.&lt;/li>
 &lt;/ul>
 &lt;ol start="5">
@@ -66,17 +66,17 @@ indicate the type of product they correspond to.&lt;/li>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">java -jar Tool_CheckCardFileStructure-x.y.z.jar &amp;lt;path-to-json-file&amp;gt; &lt;span class="o">[&lt;/span>readerNameRegex&lt;span class="o">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>&amp;lt;path-to-json-file&amp;gt;&lt;/code>: &lt;strong>(Required)&lt;/strong> The path to the JSON file containing the expected card structure. This argument should be replaced with the actual path to your JSON file (e.g., &lt;code>card_profiles/my_card_profile.json&lt;/code>).&lt;/li>
-&lt;li>&lt;code>readerNameRegex&lt;/code> (optional): A regular expression to filter the card readers. If not provided, a default regex (&lt;code>.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*&lt;/code>) is used.&lt;/li>
+&lt;li>&lt;code>readerNameRegex&lt;/code> (optional): a regular expression to filter the card readers. If not provided, a default regex (&lt;code>.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*&lt;/code>) is used.&lt;/li>
 &lt;/ul>
 &lt;ol start="6">
 &lt;li>The tool will compare the card&amp;rsquo;s structure with the provided JSON file and display any differences.&lt;/li>
 &lt;/ol>
 &lt;h2 id="troubleshooting">Troubleshooting&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Card not found:&lt;/strong> Ensure your card reader is correctly connected and installed, and that the card is presented
+&lt;li>&lt;strong>Card not found:&lt;/strong> ensure your card reader is correctly connected and installed, and that the card is presented
 correctly.&lt;/li>
-&lt;li>&lt;strong>Java not found:&lt;/strong> Ensure Java is installed and that its directory is added to your system&amp;rsquo;s PATH environment variable.&lt;/li>
-&lt;li>&lt;strong>Error messages:&lt;/strong> Carefully read any error messages displayed in the terminal for clues on how to resolve the issue.&lt;/li>
+&lt;li>&lt;strong>Java not found:&lt;/strong> ensure Java is installed and that its directory is added to your system&amp;rsquo;s PATH environment variable.&lt;/li>
+&lt;li>&lt;strong>Error messages:&lt;/strong> carefully read any error messages displayed in the terminal for clues on how to resolve the issue.&lt;/li>
 &lt;/ul>
 &lt;h2 id="disclaimer">Disclaimer&lt;/h2>
 &lt;p>This software is provided under the terms of the Eclipse Public License 2.0. See the LICENSE file for more information.&lt;/p>
@@ -102,8 +102,8 @@ injection.&lt;/p>
 &lt;h2 id="hardware-requirements">Hardware Requirements&lt;/h2>
 &lt;p>This tool requires two PC/SC contact readers:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Target SAM Reader:&lt;/strong> This reader holds the blank &lt;strong>SAM CPP&lt;/strong> you want to personalize.&lt;/li>
-&lt;li>&lt;strong>Origin SAM Reader:&lt;/strong> This reader contains the &lt;strong>SAM SP&lt;/strong> with the desired keys and settings.&lt;/li>
+&lt;li>&lt;strong>Target SAM Reader:&lt;/strong> this reader holds the blank &lt;strong>SAM CPP&lt;/strong> you want to personalize.&lt;/li>
+&lt;li>&lt;strong>Origin SAM Reader:&lt;/strong> this reader contains the &lt;strong>SAM SP&lt;/strong> with the desired keys and settings.&lt;/li>
 &lt;/ul>
 &lt;h2 id="installation">Installation&lt;/h2>
 &lt;ol>
@@ -117,10 +117,10 @@ file that matches your operating system:
 &lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>.deb&lt;/code> package&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Windows:&lt;/strong> Double-click the &lt;code>.msi&lt;/code> package to start the installation.&lt;/li>
-&lt;li>&lt;strong>macOS:&lt;/strong> Open the &lt;code>.dmg&lt;/code> file and drag the application to the Applications folder.&lt;/li>
-&lt;li>&lt;strong>Linux:&lt;/strong> Use your distribution&amp;rsquo;s package manager to install the &lt;code>.deb&lt;/code> package.&lt;/li>
-&lt;li>&lt;strong>Important note:&lt;/strong> The installer does not automatically create a shortcut in the Start Menu (Windows) or
+&lt;li>&lt;strong>Windows:&lt;/strong> double-click the &lt;code>.msi&lt;/code> package to start the installation.&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> open the &lt;code>.dmg&lt;/code> file and drag the application to the Applications folder.&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> use your distribution&amp;rsquo;s package manager to install the &lt;code>.deb&lt;/code> package.&lt;/li>
+&lt;li>&lt;strong>Important note:&lt;/strong> the installer does not automatically create a shortcut in the Start Menu (Windows) or
 Applications menu (macOS). You need to create one manually.&lt;/li>
 &lt;/ol>
 &lt;h2 id="launch-the-tool">Launch the Tool&lt;/h2>
@@ -145,9 +145,9 @@ Applications menu (macOS). You need to create one manually.&lt;/li>
 &lt;/ol>
 &lt;h3 id="tabs">Tabs&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>SAM Dump:&lt;/strong> Shows the detailed information and parameters of the SAM inserted in the target SAM reader.&lt;/li>
-&lt;li>&lt;strong>SAM Personalization:&lt;/strong> Configure and execute the personalization process.&lt;/li>
-&lt;li>&lt;strong>Application Info:&lt;/strong> View logs and events related to the application and SAM readers. Useful for troubleshooting.&lt;/li>
+&lt;li>&lt;strong>SAM Dump:&lt;/strong> shows the detailed information and parameters of the SAM inserted in the target SAM reader.&lt;/li>
+&lt;li>&lt;strong>SAM Personalization:&lt;/strong> configure and execute the personalization process.&lt;/li>
+&lt;li>&lt;strong>Application Info:&lt;/strong> view logs and events related to the application and SAM readers. Useful for troubleshooting.&lt;/li>
 &lt;/ul>
 &lt;h2 id="personalize-a-sam-cpp">Personalize a SAM CPP&lt;/h2>
 &lt;ol>
@@ -208,17 +208,17 @@ Applications menu (macOS). You need to create one manually.&lt;/li>
 authorized to distribute this tool to other parties.&lt;/p>
 &lt;h2 id="user-requirements-and-responsibilities">User Requirements and Responsibilities&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Target Audience:&lt;/strong> Users familiar with SAM personalization and the Calypso system.&lt;/li>
-&lt;li>&lt;strong>Prerequisites:&lt;/strong> Necessary hardware (SAM readers) and software (drivers) installed and configured correctly.&lt;/li>
-&lt;li>&lt;strong>Responsibilities:&lt;/strong> Ensure the correct selection of target and origin SAMs, and the proper handling of unlock values
+&lt;li>&lt;strong>Target Audience:&lt;/strong> users familiar with SAM personalization and the Calypso system.&lt;/li>
+&lt;li>&lt;strong>Prerequisites:&lt;/strong> necessary hardware (SAM readers) and software (drivers) installed and configured correctly.&lt;/li>
+&lt;li>&lt;strong>Responsibilities:&lt;/strong> ensure the correct selection of target and origin SAMs, and the proper handling of unlock values
 and other sensitive information.&lt;/li>
-&lt;li>&lt;strong>Usage:&lt;/strong> Authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
+&lt;li>&lt;strong>Usage:&lt;/strong> authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
 &lt;/ul></description></item><item><title>Calypso Basic Card Personalization Tool Tutorial</title><link>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-basic-card-perso-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jeanpierrefortune.github.io/docsy-example/calypsonet-keyple-support-website/resources/tools/cna-tool-basic-card-perso-app/</guid><description>&lt;p>This tutorial will guide you through the process of personalizing a Calypso Basic card.&lt;/p>
 &lt;h2 id="hardware-requirements">Hardware Requirements&lt;/h2>
 &lt;p>This tool requires two PC/SC readers:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Target Card Reader:&lt;/strong> This contactless reader holds the &lt;strong>blank card&lt;/strong> you want to personalize.&lt;/li>
-&lt;li>&lt;strong>SAM Reader:&lt;/strong> This contact reader contains the &lt;strong>SAM CPP&lt;/strong> used for keys injection.&lt;/li>
+&lt;li>&lt;strong>Target Card Reader:&lt;/strong> this contactless reader holds the &lt;strong>blank card&lt;/strong> you want to personalize.&lt;/li>
+&lt;li>&lt;strong>SAM Reader:&lt;/strong> this contact reader contains the &lt;strong>SAM CPP&lt;/strong> used for keys injection.&lt;/li>
 &lt;/ul>
 &lt;h2 id="installation">Installation&lt;/h2>
 &lt;ol>
@@ -232,10 +232,10 @@ file that matches your operating system:
 &lt;li>&lt;strong>Linux:&lt;/strong> &lt;code>.deb&lt;/code> package&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Windows:&lt;/strong> Double-click the &lt;code>.msi&lt;/code> package to start the installation process.&lt;/li>
-&lt;li>&lt;strong>macOS:&lt;/strong> Open the &lt;code>.dmg&lt;/code> file and drag the application to the Applications folder.&lt;/li>
-&lt;li>&lt;strong>Linux:&lt;/strong> Use your distribution&amp;rsquo;s package manager to install the &lt;code>.deb&lt;/code> package.&lt;/li>
-&lt;li>&lt;strong>Important note:&lt;/strong> Currently, the installer does not automatically create a shortcut in the Start Menu (Windows) or
+&lt;li>&lt;strong>Windows:&lt;/strong> double-click the &lt;code>.msi&lt;/code> package to start the installation process.&lt;/li>
+&lt;li>&lt;strong>macOS:&lt;/strong> open the &lt;code>.dmg&lt;/code> file and drag the application to the Applications folder.&lt;/li>
+&lt;li>&lt;strong>Linux:&lt;/strong> use your distribution&amp;rsquo;s package manager to install the &lt;code>.deb&lt;/code> package.&lt;/li>
+&lt;li>&lt;strong>Important note:&lt;/strong> currently, the installer does not automatically create a shortcut in the Start Menu (Windows) or
 Applications menu (macOS). If you want quick access, you will need to create a shortcut manually.&lt;/li>
 &lt;/ol>
 &lt;h2 id="launch-the-tool">Launch the Tool&lt;/h2>
@@ -263,9 +263,9 @@ locally)&lt;/li>
 &lt;/ol>
 &lt;h3 id="tabs">Tabs&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>Basic Card Personalization:&lt;/strong> Configure and personalize the card. Set parameters like AID, KVC, and KIFs, and
+&lt;li>&lt;strong>Basic Card Personalization:&lt;/strong> configure and personalize the card. Set parameters like AID, KVC, and KIFs, and
 start/stop the personalization process.&lt;/li>
-&lt;li>&lt;strong>Application Info:&lt;/strong> View logs and events related to the application and card reader. Useful for troubleshooting.&lt;/li>
+&lt;li>&lt;strong>Application Info:&lt;/strong> view logs and events related to the application and card reader. Useful for troubleshooting.&lt;/li>
 &lt;/ul>
 &lt;h2 id="personalize-a-card">Personalize a Card&lt;/h2>
 &lt;ol>
@@ -318,11 +318,11 @@ Personalization, Application Info) to make the application recognize the changes
 authorized to distribute this tool to other parties.&lt;/p>
 &lt;h2 id="user-requirements-and-responsibilities">User Requirements and Responsibilities&lt;/h2>
 &lt;ul>
-&lt;li>&lt;strong>Target Audience:&lt;/strong> Users familiar with Calypso Basic card personalization. Basic knowledge of smart card technology
+&lt;li>&lt;strong>Target Audience:&lt;/strong> users familiar with Calypso Basic card personalization. Basic knowledge of smart card technology
 and security concepts is assumed.&lt;/li>
-&lt;li>&lt;strong>Prerequisites:&lt;/strong> Necessary hardware (card reader, SAM reader) and software (drivers) installed and configured
+&lt;li>&lt;strong>Prerequisites:&lt;/strong> necessary hardware (card reader, SAM reader) and software (drivers) installed and configured
 correctly.&lt;/li>
-&lt;li>&lt;strong>Responsibilities:&lt;/strong> Ensure correct selection of the target card and SAM, proper handling of unlock values and
+&lt;li>&lt;strong>Responsibilities:&lt;/strong> ensure correct selection of the target card and SAM, proper handling of unlock values and
 sensitive information, and entering the correct personalization parameters (AID, KVC, KIFs).&lt;/li>
-&lt;li>&lt;strong>Usage:&lt;/strong> Authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
+&lt;li>&lt;strong>Usage:&lt;/strong> authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.&lt;/li>
 &lt;/ul></description></item></channel></rss>
