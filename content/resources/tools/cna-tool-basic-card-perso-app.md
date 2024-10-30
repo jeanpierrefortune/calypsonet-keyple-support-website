@@ -2,7 +2,7 @@
 title: Calypso Basic Card Personalization Tool Tutorial
 type: book
 toc: true
-weight: 2
+weight: 3
 ---
 
 This tutorial will guide you through the process of personalizing a Calypso Basic card.

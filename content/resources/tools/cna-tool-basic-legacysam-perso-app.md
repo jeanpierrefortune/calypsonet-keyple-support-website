@@ -2,7 +2,7 @@
 title: Calypso Basic Legacy SAM Personalization Tool Tutorial
 type: book
 toc: true
-weight: 1
+weight: 2
 ---
 
 This tutorial will guide you through the process of personalizing a **SAM CPP** needed for Calypso Basic card key
