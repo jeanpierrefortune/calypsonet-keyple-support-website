@@ -12,8 +12,8 @@ injection.
 
 This tool requires two PC/SC contact readers:
 
-* **Target SAM Reader:** This reader holds the blank **SAM CPP** you want to personalize.
-* **Origin SAM Reader:** This reader contains the **SAM SP** with the desired keys and settings.
+* **Target SAM Reader:** this reader holds the blank **SAM CPP** you want to personalize.
+* **Origin SAM Reader:** this reader contains the **SAM SP** with the desired keys and settings.
 
 ## Installation
 
@@ -24,10 +24,10 @@ This tool requires two PC/SC contact readers:
     * **Windows:** `.msi` package
     * **macOS:** `.dmg` package
     * **Linux:** `.deb` package
-2. **Windows:** Double-click the `.msi` package to start the installation.
-3. **macOS:** Open the `.dmg` file and drag the application to the Applications folder.
-4. **Linux:** Use your distribution's package manager to install the `.deb` package.
-5. **Important note:** The installer does not automatically create a shortcut in the Start Menu (Windows) or
+2. **Windows:** double-click the `.msi` package to start the installation.
+3. **macOS:** open the `.dmg` file and drag the application to the Applications folder.
+4. **Linux:** use your distribution's package manager to install the `.deb` package.
+5. **Important note:** the installer does not automatically create a shortcut in the Start Menu (Windows) or
    Applications menu (macOS). You need to create one manually.
 
 ## Launch the Tool
@@ -51,9 +51,9 @@ The application window has a top menu and three tabs:
 
 ### Tabs
 
-* **SAM Dump:** Shows the detailed information and parameters of the SAM inserted in the target SAM reader.
-* **SAM Personalization:** Configure and execute the personalization process.
-* **Application Info:** View logs and events related to the application and SAM readers. Useful for troubleshooting.
+* **SAM Dump:** shows the detailed information and parameters of the SAM inserted in the target SAM reader.
+* **SAM Personalization:** configure and execute the personalization process.
+* **Application Info:** view logs and events related to the application and SAM readers. Useful for troubleshooting.
 
 ## Personalize a SAM CPP
 
@@ -96,8 +96,8 @@ authorized to distribute this tool to other parties.
 
 ## User Requirements and Responsibilities
 
-* **Target Audience:** Users familiar with SAM personalization and the Calypso system.
-* **Prerequisites:** Necessary hardware (SAM readers) and software (drivers) installed and configured correctly.
-* **Responsibilities:** Ensure the correct selection of target and origin SAMs, and the proper handling of unlock values
+* **Target Audience:** users familiar with SAM personalization and the Calypso system.
+* **Prerequisites:** necessary hardware (SAM readers) and software (drivers) installed and configured correctly.
+* **Responsibilities:** ensure the correct selection of target and origin SAMs, and the proper handling of unlock values
   and other sensitive information.
-* **Usage:** Authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.
+* **Usage:** authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.

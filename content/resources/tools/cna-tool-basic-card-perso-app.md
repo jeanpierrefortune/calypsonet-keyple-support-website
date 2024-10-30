@@ -11,8 +11,8 @@ This tutorial will guide you through the process of personalizing a Calypso Basi
 
 This tool requires two PC/SC readers:
 
-* **Target Card Reader:** This contactless reader holds the **blank card** you want to personalize.
-* **SAM Reader:** This contact reader contains the **SAM CPP** used for keys injection.
+* **Target Card Reader:** this contactless reader holds the **blank card** you want to personalize.
+* **SAM Reader:** this contact reader contains the **SAM CPP** used for keys injection.
 
 ## Installation
 
@@ -23,10 +23,10 @@ This tool requires two PC/SC readers:
     * **Windows:** `.msi` package
     * **macOS:** `.dmg` package
     * **Linux:** `.deb` package
-2. **Windows:** Double-click the `.msi` package to start the installation process.
-3. **macOS:** Open the `.dmg` file and drag the application to the Applications folder.
-4. **Linux:** Use your distribution's package manager to install the `.deb` package.
-5. **Important note:** Currently, the installer does not automatically create a shortcut in the Start Menu (Windows) or
+2. **Windows:** double-click the `.msi` package to start the installation process.
+3. **macOS:** open the `.dmg` file and drag the application to the Applications folder.
+4. **Linux:** use your distribution's package manager to install the `.deb` package.
+5. **Important note:** currently, the installer does not automatically create a shortcut in the Start Menu (Windows) or
    Applications menu (macOS). If you want quick access, you will need to create a shortcut manually.
 
 ## Launch the Tool
@@ -53,9 +53,9 @@ The application window has a top menu and two tabs:
 
 ### Tabs
 
-* **Basic Card Personalization:** Configure and personalize the card. Set parameters like AID, KVC, and KIFs, and
+* **Basic Card Personalization:** configure and personalize the card. Set parameters like AID, KVC, and KIFs, and
   start/stop the personalization process.
-* **Application Info:** View logs and events related to the application and card reader. Useful for troubleshooting.
+* **Application Info:** view logs and events related to the application and card reader. Useful for troubleshooting.
 
 ## Personalize a Card
 
@@ -94,10 +94,10 @@ authorized to distribute this tool to other parties.
 
 ## User Requirements and Responsibilities
 
-* **Target Audience:** Users familiar with Calypso Basic card personalization. Basic knowledge of smart card technology
+* **Target Audience:** users familiar with Calypso Basic card personalization. Basic knowledge of smart card technology
   and security concepts is assumed.
-* **Prerequisites:** Necessary hardware (card reader, SAM reader) and software (drivers) installed and configured
+* **Prerequisites:** necessary hardware (card reader, SAM reader) and software (drivers) installed and configured
   correctly.
-* **Responsibilities:** Ensure correct selection of the target card and SAM, proper handling of unlock values and
+* **Responsibilities:** ensure correct selection of the target card and SAM, proper handling of unlock values and
   sensitive information, and entering the correct personalization parameters (AID, KVC, KIFs).
-* **Usage:** Authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.
+* **Usage:** authorized personnel only. Misuse or unauthorized distribution is strictly prohibited.

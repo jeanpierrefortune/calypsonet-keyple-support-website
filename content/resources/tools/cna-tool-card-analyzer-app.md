@@ -12,9 +12,9 @@ analyzing and verifying Calypso-compliant smart cards.
 
 The CNA Tool Card Analyzer App Suite consists of two command-line tools:
 
-* **Tool_AnalyzeCardFileStructure:** Analyzes the file structure of a Calypso smart card and generates a JSON report
+* **Tool_AnalyzeCardFileStructure:** analyzes the file structure of a Calypso smart card and generates a JSON report
   containing the card's structure and application data.
-* **Tool_CheckCardFileStructure:** Checks the file structure of a Calypso card against a given JSON file containing the
+* **Tool_CheckCardFileStructure:** checks the file structure of a Calypso card against a given JSON file containing the
   expected file structure.
 
 **Why use the CNA Tool Card Analyzer App Suite?**
@@ -29,9 +29,9 @@ This suite helps developers and testers:
 
 ## Prerequisites
 
-* **Java:** Ensure you have a Java Runtime Environment (JRE) installed on your system. You can download it
+* **Java:** ensure you have a Java Runtime Environment (JRE) installed on your system. You can download it
   from [www.java.com](www.java.com).
-* **PC/SC card reader:** A contactless PC/SC compliant card reader is required to interact with the Calypso card.
+* **PC/SC card reader:** a contactless PC/SC compliant card reader is required to interact with the Calypso card.
 
 ## Download the Apps
 
@@ -54,7 +54,7 @@ This suite helps developers and testers:
 java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar [readerNameRegex]
 ```
 
-* `readerNameRegex` (optional): A regular expression to filter the card readers. If not provided, a default regex (
+* `readerNameRegex` (optional): a regular expression to filter the card readers. If not provided, a default regex (
   `.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*`) is used.
 
 5. The analysis results will be displayed in the terminal and JSON file containing the card structure will be saved.
@@ -75,16 +75,16 @@ java -jar Tool_CheckCardFileStructure-x.y.z.jar <path-to-json-file> [readerNameR
 ```
 
 *   `<path-to-json-file>`: **(Required)** The path to the JSON file containing the expected card structure. This argument should be replaced with the actual path to your JSON file (e.g., `card_profiles/my_card_profile.json`).
-*   `readerNameRegex` (optional): A regular expression to filter the card readers. If not provided, a default regex (`.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*`) is used.
+*   `readerNameRegex` (optional): a regular expression to filter the card readers. If not provided, a default regex (`.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*`) is used.
 
 6.  The tool will compare the card's structure with the provided JSON file and display any differences.
 
 ## Troubleshooting
 
-* **Card not found:** Ensure your card reader is correctly connected and installed, and that the card is presented
+* **Card not found:** ensure your card reader is correctly connected and installed, and that the card is presented
   correctly.
-* **Java not found:** Ensure Java is installed and that its directory is added to your system's PATH environment variable.
-* **Error messages:** Carefully read any error messages displayed in the terminal for clues on how to resolve the issue.
+* **Java not found:** ensure Java is installed and that its directory is added to your system's PATH environment variable.
+* **Error messages:** carefully read any error messages displayed in the terminal for clues on how to resolve the issue.
 
 
 ## Disclaimer
