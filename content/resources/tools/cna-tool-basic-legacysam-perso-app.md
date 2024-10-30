@@ -8,17 +8,19 @@ weight: 1
 This tutorial will guide you through the process of personalizing a **SAM CPP** needed for Calypso Basic card key
 injection.
 
-### Hardware Requirements
+## Hardware Requirements
 
 This tool requires two PC/SC contact readers:
 
-* **Target SAM Reader:** This reader holds the virgin **SAM CPP** you want to personalize.
+* **Target SAM Reader:** This reader holds the blank **SAM CPP** you want to personalize.
 * **Origin SAM Reader:** This reader contains the **SAM SP** with the desired keys and settings.
 
-### Installation
+## Installation
 
-1. Download the appropriate installation package for your operating system from
-   the [download page](https://keyple-support.calypsonet.org/tools/download/):
+1. The software is available in a GitHub repository. Go to
+   the [releases page](https://github.com/calypsonet/cna-tool-basic-card-perso-app/releases) to download it. (Note:
+   the GitHub repository is private. Please request access from [CNA](https://calypsonet.org)). Choose the installation
+   file that matches your operating system:
     * **Windows:** `.msi` package
     * **macOS:** `.dmg` package
     * **Linux:** `.deb` package
@@ -28,35 +30,35 @@ This tool requires two PC/SC contact readers:
 5. **Important note:** The installer does not automatically create a shortcut in the Start Menu (Windows) or
    Applications menu (macOS). You need to create one manually.
 
-### Launching the Tool
+## Launch the Tool
 
 1. After installation, find the executable in the installation directory:
-    * **Windows:** `C:\\Program Files\\cna-tool-basic-legacysam-perso-app\\`
+    * **Windows:** `C:\Program Files\cna-tool-basic-legacysam-perso-app\`
     * **macOS:** `/Applications/cna-tool-basic-legacysam-perso-app/`
     * **Linux:** `/opt/cna-tool-basic-legacysam-perso-app/` (or your user's home directory)
 2. Double-click the executable to launch the Calypso Basic Legacy SAM Personalization Tool.
 
-### Application Interface
+## Application UI
 
 The application window has a top menu and three tabs:
 
-#### Settings Menu
+### Settings Menu
 
 1. Click the **Settings** menu.
 2. Select the **Target SAM Reader** name. This is where you will insert your blank SAM.
 3. Select the **Origin SAM Reader** name. This SAM contains the data you want to transfer to the target SAM.
 4. Enter the **Origin SAM Unlock Value** if required.
 
-#### Tabs
+### Tabs
 
 * **SAM Dump:** Shows the detailed information and parameters of the SAM inserted in the target SAM reader.
 * **SAM Personalization:** Configure and execute the personalization process.
 * **Application Info:** View logs and events related to the application and SAM readers. Useful for troubleshooting.
 
-### Personalizing a SAM CPP
+## Personalize a SAM CPP
 
 1. Select the **SAM Personalization** tab.
-2. Insert a virgin SAM in the target SAM reader.
+2. Insert a blank SAM in the target SAM reader.
 3. Insert the SAM SP in the origin SAM reader.
 4. Set the parameters:
     * Parameter version and owner data (informative)
@@ -65,29 +67,29 @@ The application window has a top menu and three tabs:
     * Lock parameters
 5. Click **Execute** to personalize your SAM.
 
-### Refreshing Reader Detection
+## Refresh Reader Detection
 
-If you connect or disconnect SAM readers while the application is running, you might need to switch between the tabs (
-SAM Dump, SAM Personalization, Application Info) for the application to recognize the changes.
+If you connect or disconnect SAM readers while the application is running, you might need to switch between the tabs 
+(SAM Dump, SAM Personalization, Application Info) for the application to recognize the changes.
 
-### Screenshots
+## Screenshots
 
-Installation
+### Installation
 ![Installation](/media/cna-tool-basic-legacysam-perso-app/install-dialog.png)
 
-Settings
+### Settings
 ![Settings](/media/cna-tool-basic-legacysam-perso-app/settings-dialog.png)
 
-SAM dump
+### SAM dump
 ![SAM dump](/media/cna-tool-basic-legacysam-perso-app/dump-tab.png)
 
-SAM personalization
+### SAM personalization
 ![SAM personalization](/media/cna-tool-basic-legacysam-perso-app/personalization-tab.png)
 
-Application info
+### Application info
 ![Application info](/media/cna-tool-basic-legacysam-perso-app/info-and-logs-tab.png)
 
-### Disclaimer
+## Disclaimer
 
 This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
 authorized to distribute this tool to other parties.

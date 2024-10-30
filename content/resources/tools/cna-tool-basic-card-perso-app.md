@@ -7,17 +7,19 @@ weight: 2
 
 This tutorial will guide you through the process of personalizing a Calypso Basic card.
 
-### Hardware Requirements
+## Hardware Requirements
 
 This tool requires two PC/SC readers:
 
 * **Target Card Reader:** This contactless reader holds the **blank card** you want to personalize.
 * **SAM Reader:** This contact reader contains the **SAM CPP** used for keys injection.
 
-### Installation
+## Installation
 
-1. Download the appropriate installation package for your operating system from
-   the [download page](https://keyple-support.calypsonet.org/tools/download/):
+1. The software is available in a GitHub repository. Go to
+   the [releases page](https://github.com/calypsonet/cna-tool-basic-legacysam-perso-app/releases) to download it. (Note:
+   the GitHub repository is private. Please request access from [CNA](https://calypsonet.org)). Choose the installation
+   file that matches your operating system:
     * **Windows:** `.msi` package
     * **macOS:** `.dmg` package
     * **Linux:** `.deb` package
@@ -27,21 +29,21 @@ This tool requires two PC/SC readers:
 5. **Important note:** Currently, the installer does not automatically create a shortcut in the Start Menu (Windows) or
    Applications menu (macOS). If you want quick access, you will need to create a shortcut manually.
 
-### Launching the Tool
+## Launch the Tool
 
 1. Once the installation is complete, you can find the executable in the installation directory. The default location
    varies depending on your operating system:
-    * **Windows:** `C:\\Program Files\\cna-tool-basic-card-perso-app\\`
+    * **Windows:** `C:\Program Files\cna-tool-basic-card-perso-app\`
     * **macOS:** `/Applications/cna-tool-basic-card-perso-app/`
     * **Linux:** `/opt/cna-tool-basic-card-perso-app/` (or in your user's home directory if you installed it
       locally)
 2. Double-click the executable to launch the **Calypso Basic Card Personalization Tool**.
 
-### Application Interface
+## Application UI
 
 The application window has a top menu and two tabs:
 
-#### Settings Menu
+### Settings Menu
 
 1. Click the **Settings** menu.
 2. Select the **Target Card Reader** name. This is where you will present your blank Calypso Basic card.
@@ -49,13 +51,13 @@ The application window has a top menu and two tabs:
 4. Enter the **SAM Unlock Value** if required.
 5. Select the directory for the log file.
 
-#### Tabs
+### Tabs
 
 * **Basic Card Personalization:** Configure and personalize the card. Set parameters like AID, KVC, and KIFs, and
   start/stop the personalization process.
 * **Application Info:** View logs and events related to the application and card reader. Useful for troubleshooting.
 
-### Personalizing a Card
+## Personalize a Card
 
 1. Select the **Basic Card Personalization** tab.
 2. Insert the **SAM CPP** into the SAM reader.
@@ -66,26 +68,26 @@ The application window has a top menu and two tabs:
 4. Click **Start** to begin scanning for the card.
 5. Present a blank card to the card reader's antenna.
 
-### Refreshing Reader Detection
+## Refresh Reader Detection
 
 If you connect or disconnect card readers while the application is running, switch between the tabs (Basic Card
 Personalization, Application Info) to make the application recognize the changes.
 
-### Screenshots
+## Screenshots
 
-Installation
+### Installation
 ![Installation](/media/cna-tool-basic-card-perso-app/install-dialog.png)
 
-Settings
+### Settings
 ![Settings](/media/cna-tool-basic-card-perso-app/settings-dialog.png)
 
-Card personalization
+### Card personalization
 ![Card personalization](/media/cna-tool-basic-card-perso-app/personalization-tab.png)
 
-Application info
+### Application info
 ![Application info](/media/cna-tool-basic-card-perso-app/info-and-logs-tab.png)
 
-### Disclaimer
+## Disclaimer
 
 This tool is provided by CNA for its members. Only active CNA members are authorized to use this tool. A member is not
 authorized to distribute this tool to other parties.

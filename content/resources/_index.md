@@ -237,7 +237,7 @@ Java-based ticketing terminals, to help check the configuration and file structu
         <td class="text-center"><a href='{{< relref path="cna-tool-basic-legacysam-perso-app.md" >}}'>Calypso Basic Legacy SAM Personalization Tool</a></td>
         <td class="text-center">Windows, Linux, macOS</td>
         <td class="text-center">Java/Kotlin</td>
-        <td class="text-center">CNA</td>
+        <td class="text-center">CNA Member</td>
         <td class="text-center">Reserved</td>
         <td class="text-center">
 {{% modal title="Calypso Basic Legacy SAM Personalization Tool" %}}
@@ -249,7 +249,7 @@ The Calypso Basic Legacy SAM Personalization Tool is dedicated to personalizatio
         <td class="text-center"><a href='{{< relref path="cna-tool-basic-card-perso-app.md" >}}'>Calypso Basic Card Personalization Tool</a></td>
         <td class="text-center">Windows, Linux, macOS</td>
         <td class="text-center">Java/Kotlin</td>
-        <td class="text-center">CNA</td>
+        <td class="text-center">CNA Member</td>
         <td class="text-center">Reserved</td>
         <td class="text-center">
 {{% modal title="Calypso Basic Card Personalization Tool" %}}
