@@ -5,8 +5,8 @@ toc: true
 weight: 1
 ---
 
-This tutorial guides you through using the CNA Tool Card Analyzer App Suite, a set of command-line tools for analyzing
-and verifying Calypso-compliant smart cards.
+This tutorial guides you through the use of the CNA Tool Card Analyzer App Suite, a set of two command-line tools for
+analyzing and verifying Calypso-compliant smart cards.
 
 **What is the CNA Tool Card Analyzer App Suite?**
 
@@ -29,11 +29,11 @@ This suite helps developers and testers:
 
 ## Prerequisites
 
-* **Java:** Ensure you have Java Runtime Environment (JRE) installed on your system. You can download it
+* **Java:** Ensure you have a Java Runtime Environment (JRE) installed on your system. You can download it
   from [www.java.com](www.java.com).
 * **PC/SC card reader:** A contactless PC/SC compliant card reader is required to interact with the Calypso card.
 
-## Downloading the Apps
+## Download the Apps
 
 1. Go to the [releases page](https://github.com/calypsonet/calypso-card-analyzer/releases) to download the latest
    version of the application suite.
@@ -41,56 +41,49 @@ This suite helps developers and testers:
     *   `Tool_AnalyzeCardFileStructure-x.y.z.jar`
     *   `Tool_CheckCardFileStructure-x.y.z.jar`
 
+## Run the Apps
 
-## Running the Apps
+### Analyze a Card (Tool_AnalyzeCardFileStructure)
 
-### Analyzing a Card (Tool_AnalyzeCardFileStructure)
-
-1.  Open a terminal or command prompt.
-2.  Navigate to the directory containing `Tool_AnalyzeCardFileStructure-x.y.z.jar`.
-3.  Execute the following command:
-
-```bash
-java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar
-```
-4.  Present your Calypso card to the reader when prompted.
-5.  The analysis results will be displayed in JSON format in the terminal.
-
-**Saving the results:**
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing `Tool_AnalyzeCardFileStructure-x.y.z.jar`.
+3. Place your Calypso card on the reader.
+4. Execute the following command:
 
 ```bash
-java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar > analysis_results.json
+java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar [readerNameRegex]
 ```
 
+* `readerNameRegex` (optional): A regular expression to filter the card readers. If not provided, a default regex (
+  `.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*`) is used.
 
-### Checking Card Structure (Tool_CheckCardFileStructure)
+5. The analysis results will be displayed in the terminal and JSON file containing the card structure will be saved.
 
-1.  Open a terminal or command prompt.
-2.  Navigate to the directory containing `Tool_CheckCardFileStructure-x.y.z.jar`.
-3.  Prepare a JSON file (`expected_structure.json`) defining the expected card structure.
-4.  Execute the following command:
+### Check a card structure (Tool_CheckCardFileStructure)
+
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing `Tool_CheckCardFileStructure-x.y.z.jar`.
+3. **Obtain a JSON file defining the expected card structure:**
+    * You can use a pre-defined JSON file from the `card_profiles` directory in the GitHub repository. The file names
+      indicate the type of product they correspond to.
+     * Alternatively, you can create your own JSON file defining the expected structure.
+4. Place your Calypso card on the reader and keep it still.
+5. Execute the following command:
 
 ```bash
-java -jar Tool_CheckCardFileStructure-x.y.z.jar expected_structure.json
+java -jar Tool_CheckCardFileStructure-x.y.z.jar <path-to-json-file> [readerNameRegex] 
 ```
-5.  Present your Calypso card to the reader when prompted.
+
+*   `<path-to-json-file>`: **(Required)** The path to the JSON file containing the expected card structure. This argument should be replaced with the actual path to your JSON file (e.g., `card_profiles/my_card_profile.json`).
+*   `readerNameRegex` (optional): A regular expression to filter the card readers. If not provided, a default regex (`.*(ASK.*|Identiv.*2|ACS ACR122U|SCR3310).*`) is used.
+
 6.  The tool will compare the card's structure with the provided JSON file and display any differences.
-
-## Command-line Options
-
-Each tool may support additional command-line options. Use the `-h` or `--help` flag to display the available options
-for each tool:
-
-```bash
-java -jar Tool_AnalyzeCardFileStructure-x.y.z.jar -h
-java -jar Tool_CheckCardFileStructure-x.y.z.jar -h 
-```
 
 ## Troubleshooting
 
-* **Card not detected:** Ensure your card reader is correctly connected and installed, and that the card is presented
+* **Card not found:** Ensure your card reader is correctly connected and installed, and that the card is presented
   correctly.
-* **Java not found:** Make sure Java is installed and added to your system's PATH environment variable.
+* **Java not found:** Ensure Java is installed and that its directory is added to your system's PATH environment variable.
 * **Error messages:** Carefully read any error messages displayed in the terminal for clues on how to resolve the issue.
 
 
