@@ -17,5 +17,4 @@ title = "Keyple Support website"
   #text_color_light = true
 
 +++
-
 Welcome to the Keyple Support website!
