@@ -10,6 +10,9 @@ main:
   - name: Reader plugins
     url: '/reader-plugins/'
     weight: 20
+  - name: Compliance
+    url: '/compliance/'
+    weight: 30
   - name: Calypso tools
     url: '/calypso-tools/overview/'
-    weight: 30
+    weight: 40
