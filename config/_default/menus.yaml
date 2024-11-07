@@ -4,15 +4,37 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Ticketing demo
-    url: '/ticketing-demo/'
+  - name: Keyple support
+    url: '/keyple-support/'
     weight: 10
-  - name: Reader plugins
-    url: '/reader-plugins/'
+
+  - name: Introduction
+    parent: Keyple support
+    url: '/keyple-support/introduction/'
+    weight: 10
+  - name: Ticketing demo
+    parent: Keyple support
+    url: '/keyple-support/ticketing-demo/'
     weight: 20
-  - name: Compliance
-    url: '/compliance/'
+  - name: Reader plugins
+    parent: Keyple support
+    url: '/keyple-support/reader-plugins/'
     weight: 30
-  - name: Calypso tools
-    url: '/calypso-tools/overview/'
-    weight: 40
+
+
+  - name: Assistance tools
+    url: '/assistance-tools/'
+    weight: 20
+
+  - name: Card configuration audit
+    parent: Assistance tools
+    url: '/assistance-tools/card-configuration-audit/'
+    weight: 10
+  - name: Basic Legacy SAM personalizer
+    parent: Assistance tools
+    url: '/assistance-tools/basic-legacysam-personalizer/'
+    weight: 20
+  - name: Basic card personalizer
+    parent: Assistance tools
+    url: '/assistance-tools/basic-card-personalizer/'
+    weight: 30

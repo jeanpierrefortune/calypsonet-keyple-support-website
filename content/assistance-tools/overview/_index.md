@@ -21,7 +21,7 @@ weight: 10
     </thead>
     <tbody id="external-resource-table-3-content">
     <tr>
-        <td class="text-center"><a href='{{< relref path="card-analyzer" >}}'>Calypso Card Analyzer</a></td>
+        <td class="text-center"><a href='{{< relref path="card-configuration-audit" >}}'>Calypso Card Analyzer</a></td>
         <td class="text-center">Windows, Linux, macOS</td>
         <td class="text-center">Java/Kotlin</td>
         <td class="text-center"><a href="https://www.eclipse.org/legal/epl-2.0/" target="_blank" rel="noopener">EPL-2.0</a></td>
